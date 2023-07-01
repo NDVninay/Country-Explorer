@@ -1,5 +1,4 @@
 import Box from "@mui/material/Box";
-import "./App.css";
 import { Snackbar } from "@mui/material";
 import Alert from "@mui/material/Alert";
 import { useState } from "react";

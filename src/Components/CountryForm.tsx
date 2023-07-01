@@ -6,7 +6,7 @@ interface CountryFormProps {
   onCountrySubmit: (country: string, resetForm: () => void) => void;
 }
 
-function countryForm({ onCountrySubmit }: CountryFormProps) {
+function CountryForm({ onCountrySubmit }: CountryFormProps) {
   // useForm
   const {
     register,
@@ -48,4 +48,4 @@ function countryForm({ onCountrySubmit }: CountryFormProps) {
   );
 }
 
-export default countryForm;
+export default CountryForm;
