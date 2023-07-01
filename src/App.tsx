@@ -24,6 +24,7 @@ function App() {
         setCountriesData(response);
         // Clear the error when request is successful
         setErrorMessage("");
+        //function to reset the form after submission , clearing the input fields..
         resetForm();
       })
       .catch((err: any) => {
@@ -37,6 +38,7 @@ function App() {
         setCountriesData([]);
         console.log(err);
       })
+      //The finally is used to set the loading state to false.
       .finally(() => {
         setLoading(false);
       });
@@ -57,11 +59,12 @@ function App() {
         </Alert>
       </Snackbar>
       {loading ? (
-        // Loading Spinner
+        // If loading is true , it means that data is being loaded
         <Box sx={{ display: "flex", justifyContent: "center", mt: 3 }}>
           <CircularProgress />
         </Box>
       ) : (
+        // If loading is false , it means that loading process has completed,and show the cards
         <Box sx={{ display: "flex", flexWrap: "wrap" }}>
           {countriesData.map(country => (
             <CountryCard key={country.name.common} country={country} />
