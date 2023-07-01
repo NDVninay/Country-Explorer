@@ -11,12 +11,12 @@ import CountryCard from "./Components/CountryCard";
 function App() {
   //useState
   const [countriesData, setCountriesData] = useState<Country[]>([]);
-  // State for loading
+  // State for loading spinner
   const [loading, setLoading] = useState<boolean>(false);
   // State for error message
   const [errorMessage, setErrorMessage] = useState("");
 
-  // onSubmit function
+  // onSubmit function is called when a form is submitted.
   const onSubmit = (country: string, resetForm: () => void) => {
     setLoading(true);
     getCountryData(country)
@@ -71,5 +71,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
