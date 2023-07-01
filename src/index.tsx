@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Header from "./Components/header";
-import Footer from "./Components/footer";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 import { Box } from "@mui/material";
 
 const root = ReactDOM.createRoot(
