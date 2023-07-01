@@ -9,7 +9,7 @@ import CountryForm from "./Components/CountryForm";
 import CountryCard from "./Components/CountryCard";
 
 function App() {
-  //useState
+  //useState update the value of countriesData
   const [countriesData, setCountriesData] = useState<Country[]>([]);
   // State for loading spinner
   const [loading, setLoading] = useState<boolean>(false);

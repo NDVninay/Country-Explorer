@@ -21,7 +21,7 @@ function CountryForm({ onCountrySubmit }: CountryFormProps) {
 
   return (
     <Box component="form" onSubmit={handleSubmit(onSubmit)} sx={{ mt: 1 }}>
-      {/* input */}
+      {/* input from material ui */}
       <TextField
         margin="normal"
         id="country"
