@@ -4,7 +4,7 @@ import { Country } from "../types/Country";
 interface CountryCardProps {
   country: Country;
 }
-//display the cards base on the response from the API
+//display the cards base on the response from the API ..
 function CountryCard({ country }: CountryCardProps) {
   return (
     <Card key={country.name.common} sx={{ width: 250, margin: 2 }}>
